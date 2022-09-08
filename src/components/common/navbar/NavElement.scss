@@ -1,0 +1,14 @@
+.nav-element {
+    height: 44px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nav-name {
+    margin-top: 4px;
+    color: #dcdcdc;
+    &:hover {
+        color: #ffffff !important;
+    }
+}

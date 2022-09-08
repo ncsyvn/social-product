@@ -5,9 +5,18 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* Custom bootstrap */
+.form-control:focus {
+  border-color: #a3a3a3;
+  box-shadow: 0 0 0 0.15rem rgba(143, 143, 143, 0.25);
 }
