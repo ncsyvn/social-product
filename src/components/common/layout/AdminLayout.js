@@ -5,12 +5,12 @@ import "./AdminLayout.scss";
 
 const AdminLayout = ({ children }) => {
   return (
-    <div class="admin-layout">
+    <div className="admin-layout">
       <AdminHeader></AdminHeader>
-      <div class="main-page">
+      <div className="main-page">
         <AdminNavBar></AdminNavBar>
-        <div class="page-wrapper">
-          <div class="content-page">{children}</div>
+        <div className="page-wrapper">
+          <div className="content-page">{children}</div>
           <Footer></Footer>
         </div>
       </div>

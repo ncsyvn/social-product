@@ -11,7 +11,7 @@ const AdminSideBar = () => {
   };
 
   return (
-    <div class="div-main-sidebar">
+    <div className="div-main-sidebar">
       {navbar.map((element, index) => {
         return (
           <NavElement

@@ -1,40 +1,40 @@
 import "./AdminHeader.scss";
 const AdminHeader = () => {
   return (
-    <div class="div-main-header">
-      <div class="div-logo">
+    <div className="div-main-header">
+      <div className="div-logo">
         <img
           src="/images/logo.svg"
           alt="logo app"
           style={{ width: "140px" }}
         ></img>
-        <div class="div-handle-sidebar">
-          <div class="div-on-sidebar"></div>
+        <div className="div-handle-sidebar">
+          <div className="div-on-sidebar"></div>
         </div>
       </div>
-      <div class="div-search-notify">
-        <div class="div-search">
-          <div class="input-group rounded">
+      <div className="div-search-notify">
+        <div className="div-search">
+          <div className="input-group rounded">
             <input
               type="search"
-              class="form-control rounded"
+              className="form-control rounded"
               placeholder="Search"
               aria-label="Search"
               aria-describedby="search-addon"
             />
-            <span class="input-group-text border-0" id="search-addon">
-              <i class="bi bi-search i-search"></i>
+            <span className="input-group-text border-0" id="search-addon">
+              <i className="bi bi-search i-search"></i>
             </span>
           </div>
         </div>
-        <div class="div-profile">
+        <div className="div-profile">
           <img
             src="/images/avatar.png"
             alt="logo app"
-            class="img-avt"
+            className="img-avt"
           ></img>
-          <span class="span-username">Joohn Doe</span>
-          <i class="bi bi-chevron-down" style={{fontSize: "8px"}}></i>
+          <span className="span-username">Joohn Doe</span>
+          <i className="bi bi-chevron-down" style={{fontSize: "8px"}}></i>
         </div>
       </div>
     </div>
