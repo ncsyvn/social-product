@@ -14,8 +14,7 @@ const avatars = [
   "/images/avatars/avatar4.jpg",
   "/images/avatars/avatar5.png",
 ];
-const AdminCustomer = () => {
-  console.log("Render admin customer");
+const AdminSetting = () => {
   const [total, setTotal] = useState(0);
   const onPageChange = (page, pageSize) => {
     console.log(page, pageSize);
@@ -103,48 +102,6 @@ const AdminCustomer = () => {
   return (
     <AdminLayout>
       <span className="title">Manage customer</span>
-      {/* <div class="wrapper-content">
-        <div>
-          <table className="table table-hover">
-            <thead style={{ position: "sticky" }}>
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">Name</th>
-                <th scope="col">Tax Number</th>
-                <th scope="col">Address</th>
-                <th scope="col">Created By</th>
-                <th scope="col">Created Date</th>
-                <th scope="col">Actived Date</th>
-                <th scope="col">Action</th>
-              </tr>
-            </thead>
-            <tbody>
-              {customers.map((element, index) => {
-                return (
-                  <tr key={index}>
-                    <th scope="row">{index + 1}</th>
-                    <td className="table-row-name">{element.name}</td>
-                    <td>{element.tax}</td>
-                    <td>{element.address}</td>
-                    <td>{element.created_by}</td>
-                    <td>{element.created_date}</td>
-                    <td>{element.actived_date}</td>
-                    <td></td>
-                  </tr>
-                );
-              })}
-            </tbody>
-          </table>
-        </div>
-
-        <Pagination
-          total={total}
-          showTotal={true}
-          showPageSize={true}
-          showGotoPage={true}
-          onChange={onPageChange}
-        ></Pagination>
-      </div> */}
       <div class="wrapper-content" style={{ paddingBottom: "12px" }}>
         <Table
           dataSource={customers}
@@ -166,4 +123,4 @@ const AdminCustomer = () => {
   );
 };
 
-export default AdminCustomer;
+export default AdminSetting;

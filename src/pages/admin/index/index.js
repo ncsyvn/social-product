@@ -14,8 +14,7 @@ const avatars = [
   "/images/avatars/avatar4.jpg",
   "/images/avatars/avatar5.png",
 ];
-const AdminCustomer = () => {
-  console.log("Render admin customer");
+const AdminIndex = () => {
   const [total, setTotal] = useState(0);
   const onPageChange = (page, pageSize) => {
     console.log(page, pageSize);
@@ -166,4 +165,4 @@ const AdminCustomer = () => {
   );
 };
 
-export default AdminCustomer;
+export default AdminIndex;

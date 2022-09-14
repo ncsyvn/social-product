@@ -1,5 +1,6 @@
 import { ReactSVG } from "react-svg";
 import { css } from "glamor";
+import React, { useState } from "react";
 
 const Icon = ({
   name,
@@ -7,22 +8,30 @@ const Icon = ({
   width = null,
   height = null,
   style = {},
+  forceColor = null,
 }) => {
+  const [iconColor, setIconColor] = useState(color);
+  const onMouseEnter = () => {
+    setIconColor(forceColor);
+  }
+  const onMouseLeave = () => {
+    setIconColor(color);
+  }
   const stylesIcon = css({
     " path": {
-      fill: color,
+      fill: iconColor,
     },
     " polyline": {
-      fill: color,
+      fill: iconColor,
     },
     " polygon": {
-      fill: color,
+      fill: iconColor,
     },
     " svg": {
       height: height,
       width: width,
     },
   });
-  return <ReactSVG src={`/icons/${name}`} {...stylesIcon} style={style} />;
+  return <ReactSVG src={`/icons/${name}`} {...stylesIcon} style={style} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} onMouseOut={onMouseLeave}/>;
 };
 export default Icon;

@@ -2,7 +2,7 @@ export const navbar = [
     {
         title: "Overview",
         iconPath: "nav-overview.svg",
-        link: "/admin/overview"
+        link: "/admin/index"
     },
     {
         title: "Customer",
